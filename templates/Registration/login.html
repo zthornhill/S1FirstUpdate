@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<body>
+
+    <img class="pic" src="{% static "images/logo.JPG" %}" alt="Logo" width="180" height="180"/>
+    <img class="pic2" src="{% static "images/logo.JPG" %}" alt="Logo" width="180" height="180"/>
+
+
+    <h2>Log In!</h2>
+
+        <form class="settings">
+            <div class="settings">
+                <label for="username">Username</label><br>
+                <input type="text" id="id_username" name="id_username"><br>
+            </div>
+            <div class="settings">
+                <label for="email">Password</label><br>
+                <input type="text" id="id_password" name="id_password"><br>
+            </div>
+                <input class="submit" type="submit" value="Submit"><br>
+        </form>
+
+</body>
+
+<style>
+
+    body {
+    text-align: center;
+    color: grey;
+    font-family: "Palatino Linotype", Palatino, serif;
+    }
+
+    .pic {
+    position:fixed;
+	top:100px;
+	left:200px;
+    }
+
+    .pic2 {
+    position:fixed;
+	top:100px;
+	right:200px;
+    }
+
+    h2 {
+        font-size: 60px;
+        color: black;
+    }
+
+    input{
+        padding: 6px;
+        font-size: 15px;
+        width: 220px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    label{
+        width: 240px;
+        display: inline-block;
+        color: gray ;
+        font-weight: bold;
+    }
+
+    textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .submit {
+        width: 250px;
+        margin-top: 50px;
+        background-color: aqua;
+    }
+
+</style>
+
+
+</html>
